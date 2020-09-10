@@ -39,40 +39,38 @@
       </nav>
 
 
-
-      <div class="container my-5 bg-light p-2 conts">
-        <h3 class="text-center text-dark abcd">CHOOSE CAPTAIN AND VICE CAPTAIN</h3>
-      </div>
-
-      <div class="container">
-          <div class="col-md-6 container">
-            <form>
-                <div class="mb-3">
-                    <label for="captain" class="form-label">Choose a Captain</label>
-                    <select id="captain" class="form-select">
-                      <option>Virat Kohli</option>
-                      <option>ABD</option>
-                      <option>Parthiv Patel</option>
-                      <option>Joe Root</option>
-                      <option>Ben Stokes</option>
-                      <option>Chris morris</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="captain" class="form-label">Choose a Vice Captain</label>
-                    <select id="captain" class="form-select">
-                        <option>Virat Kohli</option>
-                        <option>ABD</option>
-                        <option>Parthiv Patel</option>
-                        <option>Joe Root</option>
-                        <option>Ben Stokes</option>
-                        <option>Chris morris</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-info">Submit Captain & Vice-Captain</button>
-              </form>
-          </div>
-      </div>
+      <div class="conts container">
+        <article class="card-body mx-auto col-md-6 col-lg-4 col-sm-12">
+          <h4 class="card-title mt-3 text-center">Create Account</h4>
+          <p class="text-center inside_title2">Get started with your account</p>
+          <form action="" method="POST">
+            <div class="form-group input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input name="username" class="form-control" placeholder="Username" type="text">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input name="email" class="form-control" placeholder="Email" type="email">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input class="form-control" placeholder="Create password" type="password" name="password">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input class="form-control" placeholder="Repeat password" type="password" name="password2">
+            </div> <!-- form-group// -->
+            <div class="form-group mb-3">
+              <button type="submit" class="btn btn-success btn-block"> Create Account </button>
+            </div> <!-- form-group// -->
+            <p class="text-center">Have an account? <a href="login.html">Log In</a> </p>
+          </form>
+        </article>
+      </div> <!-- card.// -->
 
       <div class="container my-5 py-5"></div>
 
@@ -117,3 +115,5 @@
     <script src="js/app.js"></script>
 </body>
 </html>
+
+
