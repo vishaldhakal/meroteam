@@ -243,6 +243,15 @@ body {
 .link:hover{
   color: rgb(65, 65, 65);
 }
+.link2{
+  text-decoration: none;
+  color: rgb(255, 253, 253);
+}
+.link2:hover{
+  background-color: white;
+  color: #0a473f;
+  border:1px solid #0a473f;
+}
 .sticky{
   background-color: #ffffff;
   position: sticky;
@@ -262,4 +271,14 @@ input[type=checkbox].css-checkbox{ display: none; }
 
 input[type=checkbox].css-checkbox:checked + label.css-label {
   background-image: url('../images/b.svg');
+}
+.create{
+  background-color: #0a473f;
+  color: white;
+  font-size: 0.6rem;
+  border-radius: 100px;
+}
+.rad{
+  border-radius: 30px;
+  border-color: rgba(0, 255, 115, 0.897) !important;
 }
