@@ -181,6 +181,10 @@ body {
   background:rgba(0, 255, 0, 0.151);
 }
 
+.bottom2{
+  background:rgba(0, 255, 179, 0.151);
+}
+
 .bolds:hover{
   color: black;
 }
@@ -190,8 +194,8 @@ body {
   left: 20px;
   right: 20px;
 }
-.contactus a{
-  background-color: rgb(32, 209, 62) !important;
+.contactus input{
+  background-color: #0a473f !important;
   border-radius:700px !important;
 }
 .backk{
@@ -238,4 +242,24 @@ body {
 }
 .link:hover{
   color: rgb(65, 65, 65);
+}
+.sticky{
+  background-color: #ffffff;
+  position: sticky;
+  top:0;
+}
+input[type=checkbox].css-checkbox{ display: none; }
+
+.css-label{
+    padding-left: 20px;
+    display: flex;
+    width: 50%;
+    height: 20px;
+    background-image: url('../images/a.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-image: url('../images/b.svg');
 }
