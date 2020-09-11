@@ -36,7 +36,18 @@ body {
   font-weight: 800;
   font-size: 1rem;
   text-decoration: none;
-  color:black;
+  color:rgb(99, 99, 99);
+}
+.colored{
+  color: rgb(7, 7, 41);
+}
+.foot{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  background:rgb(255, 255, 255); 
+  box-shadow: 1px 1px 4px 1px rgb(175, 175, 175);
 }
 @media (max-width: 700px) {
   #small_center {
@@ -49,10 +60,13 @@ body {
     font-size: 2rem;
   }
   .small{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .bolds{
     font-size: 0.7rem;
+  }
+  .foot{
+    display: block;
   }
 }
 .footer {
@@ -177,6 +191,50 @@ body {
   right: 20px;
 }
 .contactus a{
-  background-color: rgb(92, 255, 119) !important;
+  background-color: rgb(32, 209, 62) !important;
   border-radius:700px !important;
+}
+.backk{
+  background-image: url('../images/vs1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.selec{
+  font-size: 0.7rem;
+}
+.lightt{
+  font-weight: 400;
+  font-size: small;
+  color: #333333;
+}
+.toptext{
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: white;
+}
+.bg-mine{
+  background-color:#0a473f;
+}
+.teamtex{
+  color: rgb(207, 207, 207);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.tex{
+  color: rgb(207, 207, 207);
+  font-size: 0.8rem;
+}
+.spa{
+  font-size: 1rem;
+  color: #ffffff;
+}
+.texx{
+  font-size: 0.7rem;
+}
+.link{
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+}
+.link:hover{
+  color: rgb(65, 65, 65);
 }
