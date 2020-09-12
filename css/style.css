@@ -3,6 +3,11 @@
 body {
   font-family: Montserrat !important;
 }
+.main{
+  background-image: url('../images/back.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .small{
   font-weight: 900;
   font-size: 1rem;
@@ -71,6 +76,9 @@ body {
   .conts {
     margin-top: 30px !important;
     margin-bottom: 30px !important;
+  }
+  .main{
+    background-size: auto;
   }
 }
 .footer {
