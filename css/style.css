@@ -68,6 +68,10 @@ body {
   .foot{
     display: block;
   }
+  .conts {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
 }
 .footer {
   background: #ffffff;
