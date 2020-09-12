@@ -1,18 +1,25 @@
-self.addEventListener('install', async event => {
-    console.log('install event')
-  });
-  
-  self.addEventListener('fetch', async event => {
-    console.log('fetch event')
-  });
-  const cacheName = 'pwa-conf-v1';
-const staticAssets = [
-  './',
-  './index.html',
-  './js/app.js',
-  './css/styles.css'
+var cacheName = 'hello-pwa';
+var filesToCache = [
+  '/',
+  '/index.html',
+  '/css/style.css',
+  '/js/main.js'
 ];
-self.addEventListener('install', async event => {
-    const cache = await caches.open(cacheName); 
-    await cache.addAll(staticAssets); 
-  });
+
+/* Start the service worker and cache all of the app's content */
+self.addEventListener('install', function(e) {
+  e.waitUntil(
+    caches.open(cacheName).then(function(cache) {
+      return cache.addAll(filesToCache);
+    })
+  );
+});
+
+/* Serve cached content when offline */
+self.addEventListener('fetch', function(e) {
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  );
+});
