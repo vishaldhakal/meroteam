@@ -54,6 +54,9 @@ body {
   background:rgb(255, 255, 255); 
   box-shadow: 1px 1px 4px 1px rgb(175, 175, 175);
 }
+.fonttt{
+  font-weight: 600;
+}
 @media (max-width: 700px) {
   #small_center {
     text-align: center;
@@ -62,7 +65,10 @@ body {
     display: none;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.3rem;
+  }
+  .inside_title {
+    font-size: 0.9rem;
   }
   .small{
     font-size: 0.6rem;
@@ -79,6 +85,12 @@ body {
   }
   .main{
     background-size: auto;
+  }
+  .navs{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.64);
+  }
+  .fonttt{
+    font-size: 0.8rem;
   }
 }
 .footer {
@@ -194,7 +206,7 @@ body {
 }
 
 .bottom2{
-  background:rgba(0, 255, 179, 0.151);
+  background:rgba(110, 255, 105, 0.308);
 }
 
 .bolds:hover{
@@ -274,8 +286,8 @@ input[type=checkbox].css-checkbox{ display: none; }
 .css-label{
     padding-left: 20px;
     display: flex;
-    width: 50%;
-    height: 20px;
+    width: 100%;
+    height: 30px;
     background-image: url('../images/a.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -287,13 +299,47 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .create{
   background-color: #0a473f;
   color: white;
-  font-size: 0.6rem;
+  
   border-radius: 100px;
 }
 .rad{
   border-radius: 30px;
   border-color: rgba(6, 175, 153, 0.897) !important;
 }
-.fonttt{
-  font-weight: 600;
+.loginbtn{
+   border-radius: 0 !important;
+   color: #0a473f;
+   border: 1px solid #0a473f;
+   background-color: #ffffff;
+}
+.loginbtn:hover{
+  color: #ffffff;
+  background-color: #0a473f;
+  border: 1px solid #0a473f;
+}
+.registerbtn{
+  border-radius: 0 !important;
+  color: #ffffff;
+  background-color:#0a473f ;
+  border: 1px solid #0a473f !important;
+}
+.registerbtn:hover{
+  background-color: #ffffff;
+  color:#0a473f ;
+}
+.create2{
+  background-color: #ff0000 !important;
+  color: white !important;
+  border: none;
+  border-radius: 70px;
+  box-shadow: 0 0 7px rgba(255, 104, 104, 0.64);
+}
+
+.btnn{
+  background-color: none !important;
+  border: none !important;
+  color: #0a473f !important;
+}
+.sm{
+  font-size: 0.8rem;
 }
