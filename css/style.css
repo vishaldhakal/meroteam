@@ -343,3 +343,6 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .sm{
   font-size: 0.8rem;
 }
+.hidden{
+  display: none;
+}
