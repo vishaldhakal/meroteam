@@ -222,6 +222,16 @@ body {
   background-color: #0a473f !important;
   border-radius:700px !important;
 }
+.contactus2{
+  position: fixed;
+  bottom: 60px;
+  left: 20px;
+  right: 20px;
+}
+.contactus2 button{
+  background-color: #0a473f !important;
+  border-radius:700px !important;
+}
 .backk{
   background-image: url('../images/vs1.jpg');
   background-repeat: no-repeat;
