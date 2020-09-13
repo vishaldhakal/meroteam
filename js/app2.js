@@ -5,6 +5,13 @@ if ('serviceWorker' in navigator) {
           console.log('Service worker registered.', reg);
         });
   });
+}else{
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+  });
 }
 
 /* const divInstall = document.querySelector('#abcd');
