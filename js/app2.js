@@ -1,13 +1,13 @@
-window.onload = () => {
-    'use strict';
-  
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-               .register('./sw.js');
-    }
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+  });
 }
 
-const divInstall = document.querySelector('#abcd');
+/* const divInstall = document.querySelector('#abcd');
 const butInstall = document.querySelector('#inst');
 
 window.addEventListener('beforeinstallprompt', (event) => {
@@ -40,4 +40,4 @@ butInstall.addEventListener('click', () => {
 
 window.addEventListener('appinstalled', (event) => {
   console.log('👍', 'appinstalled', event);
-});
+}); */
