@@ -356,3 +356,66 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .hidden{
   display: none;
 }
+.btnn {
+  position: relative;
+
+  display: block;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  
+  color: #ff0000;
+  
+  transition: background-color .3s;
+}
+
+.btnn:hover, .btnn:focus {
+  background-color: #ffffff;
+}
+
+.btnn > * {
+  position: relative;
+}
+
+.btnn span {
+  display: block;
+}
+
+.btnn:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  background-color: rgba(255, 145, 145, 0.226);
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btnn:active:before {
+  width: 180%;
+  padding-top: 180%;
+  
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
