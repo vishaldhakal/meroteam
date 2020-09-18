@@ -1,10 +1,14 @@
 'use strict';
 
 // CODELAB: Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v5';
+const CACHE_NAME = 'static-cache-v6';
 
 const FILES_TO_CACHE = [
   './index.html',
+  './css/style.css',
+  './css/bootstrap.min.css',
+  './js/bootstrap.min.js',
+  './js/app.js',
 ];
 
 self.addEventListener('install', (evt) => {
